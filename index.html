@@ -1,0 +1,193 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<!--[if IE]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+  your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<script src="js/vendor/modernizr-3.8.0.min.js"></script>
+
+<div id="examples">
+  <div class="example about" onclick="aboutOnClickHandler()" id="about">
+      <span class="hover hover-3">
+        ABOUT
+      </span>
+  </div>
+  <div class="example" onclick="myStoryOnClickHandler()" id="my_story_header">
+      <span class="hover hover-3">
+        MY STORY
+      </span>
+  </div>
+  <div class="example" onclick="techStackOnClickHandler()" id="skills">
+      <span class="hover hover-3">
+        SKILLS
+      </span>
+  </div>
+  <div class="example" onclick="experienceOnClickHandler()" id="experience_header">
+      <span class="hover hover-3">
+        EXPERIENCE
+      </span>
+  </div>
+</div>
+<div class="main_container">
+  <div id="about_container" class="position about_container">
+    <div class="img_info_container">
+      <div class="img">
+        <img alt="Avatar" src="img/photo_2019-07-08_09-50-00.jpg"/>
+      </div>
+      <div class="info" style="text-align: justify">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Hi, I'm Ilya</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Web developer based in Prague. Alumnus of Omsk State University and College of
+          Polytechnics Jihlava.</p>
+        <p>Seeking to work hard for things that are pushing further and to be surrounded by those who ready to share
+          experience and knowledge</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;In love with challenges, music and running</p>
+      </div>
+    </div>
+    <div class="icons_container">
+      <a href="https://github.com/elijahmg" target="_blank">
+        <div class="icon">
+          <img alt="git_hub" src="img/GitHub-Mark-32px.png"/>
+        </div>
+      </a>
+      <a href="https://www.linkedin.com/in/ilya-fakhrutdinov-b01aa5b4/" target="_blank">
+        <div class="icon">
+          <div class="linkdin_wrapper">
+            <img class="linkdin_icon" alt="linkdin" src="img/iconfinder_linkedin_401469.png"/>
+          </div>
+        </div>
+      </a>
+      <a href="mailto:elijahmg25@gmail.com?Subject=Job" target="_blank">
+        <div class="icon">
+          <img class="mail_icon" alt="mail" src="img/iconfinder_mail_287692.png"/>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div id="tech_stack" class="hidden position about_container">
+    <p class="header_tech">Technologies</p>
+    <div class="tech_container">
+      <div class="skills">
+        <p>JavaScript</p>
+        <p>ReactJS</p>
+        <p>NodeJs</p>
+      </div>
+      <div class="skills">
+        <p>Webpack</p>
+        <p>Kotlin</p>
+        <p>Java</p>
+      </div>
+      <div class="skills">
+        <p>Apollo Server</p>
+        <p>GraphQL</p>
+        <p>GIT</p>
+      </div>
+    </div>
+    <p class="header_tech">Languages</p>
+    <div class="tech_container">
+      <div class="skills">
+        <p>Russian (Native Speaker)</p>
+      </div>
+      <div class="skills">
+        <p>English (B2)</p>
+      </div>
+      <div class="skills">
+        <p>Czech (B2)</p>
+      </div>
+    </div>
+    <p class="header_tech">Education</p>
+    <div class="tech_container">
+      <div class="skills">
+        <p>Network and Telecommunications, Ing. (OmGTU, Omsk, Russia)</p>
+        <p>Applied Informatics, Bc. (VSPJ, Jihlava, Czech Republic)</p>
+      </div>
+    </div>
+  </div>
+  <div id="experience" class="hidden position about_container">
+    <p class="header_tech">Experience</p>
+    <div class="tech_container">
+      <div class="skills">
+        <p><b>2012 - 2016</b>, AstanaMusicStudio (Astana, Kazakhstan), <b><i>IT Technician</i></b></p>
+        <p><b>2017 (Jan) - 2017 (Oct)</b>, Central Spot Trading (Prague, Czech Republic), <b><i>IT Administrator</i></b>
+        </p>
+        <p><b>2017 (Oct) - Present</b>, Trusteca SE (Prague, Czech Republic), <b><i>JavaScript Developer
+          (ReactJS)</i></b></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="my_story" class="hidden position about_container">
+    <p class="header_tech">My Story</p>
+    <div class="bio" style="text-align: justify">
+      <p class="text" style="justify-content: flex-end; display: flex">
+        &nbsp;&nbsp;&nbsp;&nbsp;<b><i>"Only time between defeat and a new start matters"</i></b>
+      </p>
+      <p class="text">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        Hey, my name is Ilya Fakhrutdinov. I grew up in Kazakhstan, but in 2015 I've decided to change my life.
+        And in 2016, I took all my savings, bought a one-way flight ticket to Prague.
+      </p>
+      <p class="text">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        In February, 2016, I've started to learn Czech language with one goal on my mind, spend only five months
+        to learn new language.
+      </p>
+      <p class="text">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        It was a big challenge. But I did it.
+      </p>
+      <p class="text">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        Next couple of months after language school, I spent deciding my next step.
+        My first degree in networks field, so I decided to enhance my knowledge, but from a different side,
+        from a software side. I choose to get a degree in applied informatics,
+        in College of Polytechnics in Jihlava, Czech Republic.
+        My thesis was a creation mobile application for hearing test for Android platform, and again it was a challenge
+        for me,
+        because I programmed it in new language for me, Kotlin.
+      </p>
+      <p class="text">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        I graduated in 2019
+      </p>
+      <p class="text">
+
+        During my study, I found my first job as a Web Developer and it become my passion.
+        I really like to be involved in interesting projects, where I can use and learn new technologies.
+      </p>
+      <p class="text">
+        &nbsp;&nbsp;&nbsp;&nbsp;I'm a team player, passion about my work. Always learning.
+      </p>
+      <p class="text">
+        &nbsp;&nbsp;&nbsp;&nbsp;Besides of developing, I like to read, play on the guitar and run.
+      </p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

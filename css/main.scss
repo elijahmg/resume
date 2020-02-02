@@ -1,0 +1,211 @@
+$animate: all 0.1s ease-in-out;
+
+body {
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+}
+
+p {
+  line-height: 20px;
+}
+
+.hidden {
+  display: none;
+  transform: scale(0);
+  opacity: 0;
+}
+
+.position {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#examples {
+  display: flex;
+  height: 100px;
+  position: sticky;
+  top: 0;
+  justify-content: center;
+
+  .about {
+    font-weight: 600;
+  }
+
+  .example {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 0 25px;
+    letter-spacing: 5px;
+
+    .hover {
+      font-size: 20px;
+      text-align: center;
+      margin: 0 auto;
+      padding: 0;
+      transition: $animate;
+      position: relative;
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        width: 0;
+        height: 2px;
+        margin: 5px 0 0;
+        transition: $animate;
+        transition-duration: 0.4s;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      &.hover-3 {
+        &:before {
+          left: 50%;
+        }
+
+        &:after {
+          right: 50%;
+        }
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      .hover {
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+
+        &:before,
+        &:after {
+          width: 100%;
+          opacity: 1;
+        }
+
+        &.hover-3 {
+          &:before,
+          &:after {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.about_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+
+.main_container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 85px 0;
+}
+
+.img_info_container {
+  display: flex;
+  align-items: center;
+}
+
+.info {
+  margin-left: 25px;
+  width: 600px;
+  font-size: 14px;
+}
+
+.img {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  border-radius: 100%;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    top: -40px;
+    width: 200px;
+  }
+}
+
+.icons_container {
+  width: 200px;
+  display: flex;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.icon {
+  margin: 0 5px;
+  transition: $animate;
+  transition-duration: 0.3s;
+  opacity: 0.5;
+  color: #555555;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 7;
+  }
+}
+
+.linkdin_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+}
+
+.linkdin_icon {
+  width: 20px;
+}
+
+.mail_icon {
+  width: 32px;
+}
+
+.tech_stack_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.header_tech {
+  font-size: 26px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 600;
+}
+
+.tech_container {
+  display: flex;
+  justify-content: center;
+}
+
+.skills {
+  margin: 0 50px;
+}
+
+.bio {
+  width: 800px;
+  .text {
+    line-height: 30px;
+  }
+}
+
+
+
