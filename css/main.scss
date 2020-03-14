@@ -111,6 +111,26 @@ p {
   margin: 85px 0;
 }
 
+@media only screen and (max-width: 600px) {
+  .img_info_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #examples {
+    display: inline;
+
+    .example {
+      margin: 10px 0;
+    }
+  }
+
+  .tech_container {
+    display: block !important;
+  }
+}
+
 .img_info_container {
   display: flex;
   align-items: center;
@@ -118,7 +138,7 @@ p {
 
 .info {
   margin-left: 25px;
-  width: 600px;
+  width: 70vw;
   font-size: 14px;
 }
 
@@ -201,7 +221,7 @@ p {
 }
 
 .bio {
-  width: 800px;
+  width: 85vw;
   .text {
     line-height: 30px;
   }
